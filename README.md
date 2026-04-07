@@ -1,3 +1,7 @@
+> [!WARNING]
+> Modificar "📁 Estructura del Proyecto" al terminar CSS.
+
+
 # Trabajo práctico N°2:
 
 - Flexbox
