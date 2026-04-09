@@ -7,6 +7,7 @@
     <meta name="description" content="Cine Aurora - Detalle de la película." />
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/detalle.css" />
   </head>
   <body>
     <header>
@@ -14,6 +15,7 @@
         <h1>Cine Aurora</h1>
         <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
+
       <div>
         <nav>
           <a href="../index.html">Inicio</a>
@@ -24,15 +26,17 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <img src="../assets/img/poster-1.png" alt="Póster" />
+      <section id="pelicula">
+        <div id="poster-area">
+          <img src="../assets/img/poster-1.png" alt="Póster" id="poster"/>
         </div>
+
         <div>
           <div>
             <h1>Título</h1>
             <h2>Lorem ipsum, dolor sit.</h2>
           </div>
+
           <div>
             <h3>Sinopsis</h3>
             <p>
@@ -42,14 +46,22 @@
               voluptatibus laboriosam ut recusandae animi quisquam!
             </p>
           </div>
-          <div>
-            <h3>Duración</h3>
-            <p>155 minutos</p>
-          </div>
+          <hr>
+          <div id="datos-pelicula">
+            <div>
+              <h3>Duración</h3>
+              <p>155 minutos</p>
+            </div>
 
-          <div>
-            <h3>Género</h3>
-            <p>Ciencia ficción</p>
+            <div>
+              <h3>Género</h3>
+              <p>Ciencia ficción</p>
+            </div>
+
+            <div>
+            <h3>Clasificación</h3>
+            <p>+13</p>
+          </div>
           </div>
 
           <div>
@@ -58,14 +70,12 @@
           </div>
 
           <div>
-            <h3>Clasificación</h3>
-            <p>+13</p>
-          </div>
-          <div>
             <h3>Horarios:</h3>
-            <p>16:00</p>
-            <p>19:00</p>
-            <p>22:00</p>
+            <div id="horarios">
+              <p>16:00</p>
+              <p>19:00</p>
+              <p>22:00</p>
+            </div>
           </div>
           <div>
             <p>Puntuación: ★★★★☆</p>
