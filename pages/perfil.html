@@ -20,7 +20,7 @@
         <img src="/assets/img/logo-completo.png" alt="Logo Aurora">
       </div>
       <nav class="nav">
-        <a href="index.html" class="active">Cartelera</a>
+        <a href="../index.html" class="active">Cartelera</a>
         <a href="estrenos.html">Próximos estrenos</a>
         <a href="perfil.html"><i class="fa-solid fa-user"></i> Mi Perfil</a>
       </nav>
@@ -37,12 +37,13 @@
     <main class="perfil">
       <h1 class="perfil__titulo">Panel de usuario</h1>
       <section class="perfil__info">
-        <div class="perfil__info-cabecera">
+        <div class="perfil__info-header">
           <img
+            class="perfil__info-imagen"
             src="../assets/img/perfil-placeholder.png"
             alt="Foto de perfil"
           />
-          <h2>Hola, John Doe 👋📽️!</h2>
+          <h2 class="perfil__info-usuario">Hola, John Doe 👋📽️!</h2>
         </div>
         <div class="perfil__info-detalles">
           <p>Nombre completo: John Doe</p>
@@ -54,18 +55,15 @@
       </section>
       <section class="perfil__peliculas">
         <h3 class="perfil__peliculas-titulo">Películas ya vistas</h3>
-        <div class="perfil__peliculas-contenedor-lista">
             <ul class="perfil__peliculas-lista">
               <li class="perfil__peliculas-item">🎬 Estreno A - Vista el 10/03</li>
               <li class="perfil__peliculas-item">🎬 Estreno B - Vista el 15/03</li>
             </ul>
-        </div>
-
       </section>
     </main>
 
     <footer class="pie">
-      <p class="pieparrafo">&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+      <p class="pie__parrafo">&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
   </body>
 </html>
