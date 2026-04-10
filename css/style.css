@@ -21,7 +21,7 @@ a {
   font-family: "Fira Sans", sans-serif;
 }
 
- /* Fondo Original 
+ /* Fondo Original */
 body {
     background: #000;
     position: relative;
@@ -29,9 +29,9 @@ body {
     margin: 0;
     padding: 0;
   }
-*/
+
  
-  /* Prueba Fondo Imagen */
+  /* Prueba Fondo Imagen 
   body {
     position: relative;
     overflow-x: hidden;
@@ -51,6 +51,7 @@ body {
     color: var(--texto-principal);
     min-height: 100vh;
   }
+*/
 
   body::-webkit-scrollbar {
     display: none;
