@@ -21,11 +21,39 @@ a {
   font-family: "Fira Sans", sans-serif;
 }
 
- /* Fondo */
+ /* Fondo Original 
 body {
     background: #000;
     position: relative;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+*/
+ 
+  /* Prueba Fondo Imagen */
+  body {
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Google Sans Flex', sans-serif;
+  
+    background:
+      linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9)),
+      url("/assets/img/fondo-test.jpg");
+  
+    background-size: cover;      
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+  
+    color: var(--texto-principal);
+    min-height: 100vh;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
   }
   
   /* Glow principal */
