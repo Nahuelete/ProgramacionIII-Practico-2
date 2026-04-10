@@ -15,9 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-a {
+  color: var(--color-texto);
   font-family: "Fira Sans", sans-serif;
 }
 
@@ -147,11 +145,13 @@ body {
   .nav a.active {
     color: #fff;
   }
-  
+  /* Color remarcado sobre la pagina que se encuentra el usuario 
+     IMPORTANTE: Modificar el HTML, colocando la clase "active" en el enlace correspondiente a la página actual
+  */
   .nav a.active::before {
     transform: translateY(0);
   }
-
+ 
   /* Nav Exit */
   .nav-exit {
     position: relative;
