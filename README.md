@@ -10,7 +10,7 @@
 - Modularización CSS (import url(...))
 
 
-# 🎥 Cine "AURORA" - Soluciones Digitales
+# 🎥 Cine "AURORA"
 
 **Una función inolvidable.**
 
