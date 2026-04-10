@@ -1,7 +1,6 @@
 > [!WARNING]
 > Modificar "📁 Estructura del Proyecto" al terminar CSS.
 
-
 # Trabajo práctico N°2:
 
 - Flexbox
@@ -50,13 +49,18 @@ ProgramacionIII-Practico-1/
 ├── assets/
 │   ├── favicon/
 │   └── img/
+│        └── historial-peliculas/
 ├── css/
-│   ├── styles.css
 │   ├── components/
-│       ├── AGREGAR PAGINAS
-│       └── AGREGAR COMPONENTES
+│   ├── detalle.css
+│   ├── index.css
+│   ├── perfil.css
+│   ├── style.css
+│   ├── registro.css
+│   ├── estrenos.css
+│   └── login.css
 └── pages/
-    ├── detalles.html
+    ├── detalle.html
     ├── estrenos.html
     ├── login.html
     ├── registro.html
