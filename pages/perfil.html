@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cine Aurora 📽️ - Mi perfil</title>
     <meta name="description" content="Cine Aurora - Mi perfil" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/perfil.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> 
@@ -34,17 +34,17 @@
       </div>
     </header>
 
-    <main>
-      <h1>Panel de usuario</h1>
-      <section>
-        <div>
+    <main class="perfil">
+      <h1 class="perfil__titulo">Panel de usuario</h1>
+      <section class="perfil__info">
+        <div class="perfil__info-cabecera">
           <img
             src="../assets/img/perfil-placeholder.png"
             alt="Foto de perfil"
           />
           <h2>Hola, John Doe 👋📽️!</h2>
         </div>
-        <div>
+        <div class="perfil__info-detalles">
           <p>Nombre completo: John Doe</p>
           <p>Email: usuario@example.com</p>
           <p>Fecha de nacimiento: dd/mm/yyyy</p>
@@ -52,23 +52,20 @@
           <p>Miembro desde: 2026</p>
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <h3>Películas ya vistas</h3>
-          </div>
-          <div>
-            <ul>
-              <li>🎬 Estreno A - Vista el 10/03</li>
-              <li>🎬 Estreno B - Vista el 15/03</li>
+      <section class="perfil__peliculas">
+        <h3 class="perfil__peliculas-titulo">Películas ya vistas</h3>
+        <div class="perfil__peliculas-contenedor-lista">
+            <ul class="perfil__peliculas-lista">
+              <li class="perfil__peliculas-item">🎬 Estreno A - Vista el 10/03</li>
+              <li class="perfil__peliculas-item">🎬 Estreno B - Vista el 15/03</li>
             </ul>
-          </div>
         </div>
+
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+    <footer class="pie">
+      <p class="pieparrafo">&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
   </body>
 </html>
