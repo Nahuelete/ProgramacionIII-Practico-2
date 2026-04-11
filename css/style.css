@@ -10,7 +10,7 @@
   --color-texto-suave: #cccccc;
 }
 
-/* Reset recomendado por defecto */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +30,10 @@ body {
     padding: 0;
   }
 
- 
+  main {
+    flex: 1;
+  }
+
   /* Prueba Fondo Imagen 
   body {
     position: relative;
