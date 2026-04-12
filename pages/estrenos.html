@@ -3,84 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cine Aurora 📽️ - Estrenos</title>
-    <meta name="description" content="Cine Aurora - Estrenos" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <title>Cine Aurora - Próximos estrenos</title>
+    <meta name="description" content="Descubrí los próximos estrenos de Cine Aurora." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boldonse&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/estrenos.css" />
   </head>
 
   <body>
-    <header>
-      <div>
-        <h1>Cine Aurora</h1>
-        <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
+    <header class="header">
+      <div class="nav-logo">
+        <img src="../assets/img/logo-completo.png" alt="Logo Aurora" />
       </div>
-      <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="#">Próximos estrenos</a>
-          <a href="../pages/login.html">Mi perfil</a>
-        </nav>
+
+      <nav class="nav">
+        <a href="../index.html">Cartelera</a>
+        <a href="#" class="active">Próximos estrenos</a>
+        <a href="./perfil.html">
+          <i class="fa-solid fa-user"></i> Mi Perfil
+        </a>
+      </nav>
+
+      <div class="nav-exit">
+        <span class="exit-icon">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </span>
+        <span class="exit-text">Cerrar sesión</span>
       </div>
     </header>
 
-    <main>
-      <section>
-        <div>
-          <div>
-            <h1>Próximos Lanzamientos</h1>
-          </div>
-
-          <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
+    <main class="estrenos-main">
+      <section class="estrenos-section">
+        <div class="estrenos-title">
+          <h1>Próximos estrenos</h1>
+          <p>
+            Enterate antes que nadie de las próximas películas que llegarán a
+            Cine Aurora.
+          </p>
         </div>
 
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
+        <div class="estrenos-grid">
+          <article class="estreno-card">
+            <img src="../assets/img/poster-pelicula-0.png" alt="Póster de El Último Horizonte" />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Ciencia ficción</span>
+              <h2>El Último Horizonte</h2>
+              <p>Una misión espacial pone a prueba el destino de toda la humanidad.</p>
+              <p class="estreno-date">Estreno previsto: 15 de mayo de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
 
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
+          <article class="estreno-card">
+            <img src="../assets/img/poster-pelicula-1.png" alt="Póster de Sombras del Reino" />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Fantasía</span>
+              <h2>Sombras del Reino</h2>
+              <p>Una antigua amenaza despierta y el reino deberá resistir su caída.</p>
+              <p class="estreno-date">Estreno previsto: 29 de mayo de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
 
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
+          <article class="estreno-card">
+            <img src="../assets/img/poster-pelicula-2.png" alt="Póster de Código Niebla" />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Thriller</span>
+              <h2>Código Niebla</h2>
+              <p>Un analista descubre una conspiración que supera todo lo imaginable.</p>
+              <p class="estreno-date">Estreno previsto: 12 de junio de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
 
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
+          <article class="estreno-card">
+            <img src="../assets/img/poster-pelicula-3.png" alt="Póster de Bajo las Cenizas" />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Drama</span>
+              <h2>Bajo las Cenizas</h2>
+              <p>Una familia intenta reconstruirse luego de una pérdida devastadora.</p>
+              <p class="estreno-date">Estreno previsto: 26 de junio de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
 
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
+          <article class="estreno-card">
+            <img src="../assets/img/poster-pelicula-4.png" alt="Póster de Ruta Salvaje" />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Acción</span>
+              <h2>Ruta Salvaje</h2>
+              <p>Una persecución sin tregua atraviesa ciudades y fronteras.</p>
+              <p class="estreno-date">Estreno previsto: 10 de julio de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
 
+          <article class="estreno-card">
+            <img src="../assets/img/poster-pelicula-5.png" alt="Póster de La Casa del Lago" />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Terror</span>
+              <h2>La Casa del Lago</h2>
+              <p>Un grupo de amigos descubre que el pasado todavía sigue vivo.</p>
+              <p class="estreno-date">Estreno previsto: 24 de julio de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
+        </div>
       </section>
-
-      <footer>
-        <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
-      </footer>
     </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+    </footer>
   </body>
 </html>
