@@ -28,6 +28,27 @@
   margin-bottom: var(--spacing-32);
 }
 
+.estrenos-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-20);
+  margin-bottom: var(--spacing-8);
+}
+
+.estrenos-title-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.estrenos-popcorn {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 18px rgba(255, 204, 0, 0.3));
+}
+
 .estrenos-title h1 {
   font-size: 2.2rem;
   margin-bottom: var(--spacing-12);
@@ -66,8 +87,9 @@
 .estreno-card img {
   width: 100%;
   height: 340px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  background-color: #111111;
 }
 
 .estreno-card-content {
@@ -163,6 +185,16 @@
 
   .estrenos-main {
     padding: var(--spacing-16);
+  }
+
+  .estrenos-title-box {
+    flex-direction: column;
+    gap: var(--spacing-12);
+  }
+
+  .estrenos-popcorn {
+    width: 70px;
+    height: 70px;
   }
 
   .estrenos-title h1 {
