@@ -1,0 +1,29 @@
+.perfil {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.perfil__info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.perfil__info-header{
+    
+}
+
+.perfil__peliculas{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.perfil__peliculas-lista{
+    display: grid;
+    /* Le saco el punto a los items de la lista */
+    list-style: none;
+
+
+}
