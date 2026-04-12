@@ -1,7 +1,7 @@
 .perfil {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-
+    grid-template-columns: 1fr 3fr;
+    gap: 36px;
 }
 
 .perfil__info{
@@ -9,6 +9,7 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
+    border-right: 1px solid var(--color-superficie);
 }
 
 .perfil__info-header{
@@ -16,6 +17,12 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
+}
+
+.perfil__info-imagen{
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
 }
 
 .perfil__info-detalles{
