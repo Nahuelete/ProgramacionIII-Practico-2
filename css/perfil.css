@@ -1,15 +1,28 @@
+.contenedor{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .perfil {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 36px;
+    grid-template-columns: 300px 1fr;
+    gap: 56px;
+    padding: 16px 40px;
+    flex: 1; /* Esto hace que ocupe todo el espacio entre el header y el footer */
+    min-height: 0;
 }
 
 .perfil__info{
     display: flex;
     flex-direction: column;
+    height: 100%;
     gap: 16px;
     align-items: center;
     border-right: 1px solid var(--color-superficie);
+    padding-right: 24px;
 }
 
 .perfil__info-header{
@@ -23,6 +36,7 @@
     border-radius: 50%;
     width: 140px;
     height: 140px;
+    object-fit: cover;
 }
 
 .perfil__info-detalles{
@@ -35,6 +49,15 @@
 .perfil__peliculas{
     display: flex;
     flex-direction: column;
+    height: 100%;
+
+}
+
+.perfil__peliculas-titulo{
+    color: var(--color-secundario);
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    margin-top: 0;
 
 }
 
@@ -43,24 +66,58 @@
     /* Le saco el punto a los items de la lista */
     list-style: none;
     grid-template-columns: repeat(5, 1fr);
-    gap: 32px;
-
-
-
+    max-width: 960px;
+    justify-content: space-between;
+    gap: 12px 32px;
+    padding: 0;
+    margin: 0;
 }
 
 .perfil__peliculas-item{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 8px;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
 
 }
 
 .perfil__peliculas-imagen{
-    border-radius: 8px;
+    border-radius: 12px;
     width: 100%;
-    height: 252px;
+    height: auto;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    display: block;
+    
+    
 
+}
+
+/* Contenedor del texto debajo de la imagen */
+.perfil__peliculas-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* Separación entre el título y la fecha */
+    width: 100%;
+    margin-top: 4px;
+}
+
+/* Estilo para el título de la película (h4) */
+.perfil__peliculas-nombre {
+    margin: 0; /* Fundamental: quita el margen por defecto del h4 */
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-texto);
+}
+
+/* Estilo para la fecha y el icono (p) */
+.perfil__peliculas-fecha {
+    margin: 0; /* Fundamental: quita el margen por defecto del p */
+    font-size: 0.85rem;
+    color: var(--color-texto-suave); /* Un gris claro para que no resalte tanto como el título */
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
