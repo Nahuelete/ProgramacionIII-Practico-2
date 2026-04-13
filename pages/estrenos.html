@@ -3,84 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cine Aurora 📽️ - Estrenos</title>
-    <meta name="description" content="Cine Aurora - Estrenos" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <title>Cine Aurora - Próximos estrenos</title>
+    <meta
+      name="description"
+      content="Descubrí los próximos estrenos de Cine Aurora."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boldonse&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/estrenos.css" />
   </head>
 
   <body>
-    <header>
-      <div>
-        <h1>Cine Aurora</h1>
-        <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
+    <header class="header">
+      <div class="nav-logo">
+        <img src="../assets/img/logo-completo.png" alt="Logo Aurora" />
       </div>
-      <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="#">Próximos estrenos</a>
-          <a href="../pages/login.html">Mi perfil</a>
-        </nav>
+
+      <nav class="nav">
+        <a href="../index.html">Cartelera</a>
+        <a href="#" class="active">Próximos estrenos</a>
+        <a href="./perfil.html">
+          <i class="fa-solid fa-user"></i> Mi Perfil
+        </a>
+      </nav>
+
+      <div class="nav-exit">
+        <span class="exit-icon">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </span>
+        <span class="exit-text">Cerrar sesión</span>
       </div>
     </header>
 
-    <main>
-      <section>
-        <div>
-          <div>
-            <h1>Próximos Lanzamientos</h1>
-          </div>
-
-          <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
-
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
+    <main class="estrenos-main">
+      <section class="estrenos-section">
+        <div class="estrenos-title">
+          <div class="estrenos-title-box">
+            <img
+              src="../assets/img/pochoclos.png"
+              alt="Pochoclos"
+              class="estrenos-popcorn"
+            />
+            <div class="estrenos-title-text">
+              <h1>Próximos estrenos</h1>
+              <p>
+                Enterate antes que nadie de las próximas películas que llegarán
+                a Cine Aurora y preparate para vivirlas en pantalla grande.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
+        <div class="estrenos-grid">
+          <article class="estreno-card">
+            <img src="../assets/img/avengers.png" alt="Póster de Avengers" />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Acción / Superhéroes</span>
+              <h2>Avengers Doomsday</h2>
+              <p>
+                Los héroes más poderosos de la Tierra deberán unirse para
+                enfrentar una amenaza capaz de poner en riesgo el destino del
+                planeta entero.
+              </p>
+              <p class="estreno-date">Estreno previsto: 15 de mayo de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
 
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
+          <article class="estreno-card">
+            <img src="../assets/img/badboys.png" alt="Póster de Bad Boys" />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Acción / Comedia</span>
+              <h2>Bad Boys</h2>
+              <p>
+                Dos detectives tan caóticos como eficaces se ven envueltos en un
+                nuevo caso repleto de persecuciones, humor y explosivas
+                situaciones al límite.
+              </p>
+              <p class="estreno-date">Estreno previsto: 29 de mayo de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
 
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
+          <article class="estreno-card">
+            <img
+              src="../assets/img/hombresdenegro.png"
+              alt="Póster de Hombres de Negro"
+            />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Ciencia ficción / Comedia</span>
+              <h2>Hombres de Negro</h2>
+              <p>
+                Una organización secreta protege a la humanidad de amenazas
+                extraterrestres mientras mantiene oculto un universo mucho más
+                extraño de lo que parece.
+              </p>
+              <p class="estreno-date">Estreno previsto: 12 de junio de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
 
-        <div>
-            <img src="../assets/img/poster-1.png" alt="Próximamente" />
-            <h4>Título del Estreno</h4>
-            <p>Fecha prevista: Mayo 2026</p>
-          </div>
-        </div>
+          <article class="estreno-card">
+            <img src="../assets/img/it.png" alt="Póster de It" />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Terror / Suspenso</span>
+              <h2>It</h2>
+              <p>
+                Un grupo de jóvenes deberá enfrentarse a una presencia siniestra
+                que adopta la forma de sus peores miedos y acecha desde las
+                sombras.
+              </p>
+              <p class="estreno-date">Estreno previsto: 26 de junio de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
 
+          <article class="estreno-card">
+            <img
+              src="../assets/img/spiderman.png"
+              alt="Póster de Spider-Man"
+            />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Acción / Aventura</span>
+              <h2>Spider-Man, Lejos de Casa</h2>
+              <p>
+                Entre la vida cotidiana y su deber como héroe, Peter Parker
+                deberá asumir grandes responsabilidades para proteger a quienes
+                más quiere.
+              </p>
+              <p class="estreno-date">Estreno previsto: 10 de julio de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
+
+          <article class="estreno-card">
+            <img src="../assets/img/titanic.png" alt="Póster de Titanic" />
+            <div class="estreno-card-content">
+              <span class="estreno-tag">Drama / Romance</span>
+              <h2>Titanic</h2>
+              <p>
+                Una historia de amor inolvidable nace a bordo del transatlántico
+                más famoso del mundo, mientras el destino se acerca de forma
+                inevitable.
+              </p>
+              <p class="estreno-date">Estreno previsto: 24 de julio de 2026</p>
+              <a href="./detalle.html" class="estreno-button">Ver detalles</a>
+            </div>
+          </article>
+        </div>
       </section>
-
-      <footer>
-        <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
-      </footer>
     </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+    </footer>
   </body>
 </html>
