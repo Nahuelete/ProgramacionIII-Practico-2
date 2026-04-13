@@ -1,0 +1,226 @@
+/* --- BASE Y FONDO --- */
+body {
+    background: #000;
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Glows animados de fondo */
+body::before, body::after {
+    content: "";
+    position: fixed;
+    filter: blur(120px);
+    z-index: -1;
+}
+
+body::before {
+    width: 600px; height: 600px;
+    top: 20%; left: 30%;
+    background: radial-gradient(circle, #ffcc00, transparent 50%);
+    animation: moveGlow 8s ease-in-out infinite alternate;
+}
+
+body::after {
+    width: 500px; height: 500px;
+    top: 60%; left: 60%;
+    background: radial-gradient(circle, #ff4d4d, transparent 50%);
+    animation: moveGlow2 10s ease-in-out infinite alternate;
+}
+
+/* --- HEADER Y NAVEGACIÓN --- */
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.container_logo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Boldonse', sans-serif;
+    font-size: 1.5rem;
+}
+
+.logo_imagen {
+    max-width: 80px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 5%;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 999px;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, #ff4d4d, #ffcc00);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+nav a:hover::before, nav a.active::before {
+    transform: translateY(0);
+}
+
+nav a:hover, nav a.active {
+    color: #fff;
+}
+
+/* --- CONTENEDOR PRINCIPAL DEL REGISTRO --- */
+.registro-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Permite scroll natural si es largo */
+    padding: 60px 20px; /* Espacio arriba y abajo */
+    width: 100%;
+}
+
+.registro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 420px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Boldonse', sans-serif;
+    font-size: 1.8rem;
+}
+
+.login-form label {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* Estilo para los inputs para que no se vean pegados */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+}
+
+/* --- SECCIÓN DESPLEGABLE Y BOTÓN --- */
+.contariner_desplegable {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-datos {
+    background: transparent;
+    color: #f5c518;
+    border: 1px solid #f5c518;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+    margin: 20px 0;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.toggle-datos:hover {
+    background: rgba(245, 197, 24, 0.1);
+}
+
+.seccion-desplegable {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out, padding 0.3s ease;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.seccion-desplegable.abierto {
+    max-height: 1200px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-principal {
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-principal:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* --- ANIMACIONES --- */
+@keyframes moveGlow { 
+    from { transform: translate(-50px, -50px); } 
+    to { transform: translate(50px, 50px); } 
+}
+@keyframes moveGlow2 { 
+    from { transform: translate(50px, -50px); } 
+    to { transform: translate(-50px, 50px); } 
+}
+  
