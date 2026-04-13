@@ -1,64 +1,304 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-AR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cine Aurora 📽️ - Mi perfil</title>
     <meta name="description" content="Cine Aurora - Mi perfil" />
-    <link rel="icon" href="../assets/favicon/logo-cine.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/perfil.css" />
   </head>
 
-  <body>
-    <header>
-      <div>
-        <h1>Cine Aurora</h1>
-        <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
+  <body class="contenedor">
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <div class="nav-logo">
+        <img src="/assets/img/logo-completo.png" alt="Logo Aurora">
       </div>
-      <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="../pages/estrenos.html">Próximos estrenos</a>
-          <a href="../index.html">Volver</a>
-        </nav>
+
+      <nav class="nav">
+        <a href="../index.html">Cartelera</a>
+        <a href="estrenos.html">Próximos estrenos</a>
+        <a href="perfil.html" class="active">
+          <i class="fa-solid fa-user"></i> Mi Perfil
+        </a>
+      </nav>
+
+      <div class="nav-exit">
+        <span class="exit-icon">
+          <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(255, 255, 255);"></i>
+        </span>
+        <span class="exit-text">Cerrar sesión</span>
       </div>
     </header>
 
-    <main>
-      <h1>Panel de usuario</h1>
-      <section>
-        <div>
+    <!-- ===== MAIN: sidebar + películas ===== -->
+    <main class="perfil">
+
+      <!-- Sidebar izquierdo -->
+      <section class="perfil__info">
+
+        <!-- Foto con ícono de cámara -->
+        <div class="perfil__imagen-wrapper">
           <img
+            class="perfil__info-imagen"
             src="../assets/img/perfil-placeholder.png"
             alt="Foto de perfil"
           />
-          <h2>Hola, John Doe 👋📽️!</h2>
-        </div>
-        <div>
-          <p>Nombre completo: John Doe</p>
-          <p>Email: usuario@example.com</p>
-          <p>Fecha de nacimiento: dd/mm/yyyy</p>
-          <p>Contraseña: ********</p>
-          <p>Miembro desde: 2026</p>
-        </div>
-      </section>
-      <section>
-        <div>
-          <div>
-            <h3>Películas ya vistas</h3>
-          </div>
-          <div>
-            <ul>
-              <li>🎬 Estreno A - Vista el 10/03</li>
-              <li>🎬 Estreno B - Vista el 15/03</li>
-            </ul>
+          <div class="perfil__imagen-camara" title="Cambiar foto">
+            <i class="fa-solid fa-camera"></i>
           </div>
         </div>
+
+        <!-- Nombre y membresía -->
+        <div class="perfil__info-header">
+          <h2 class="perfil__info-nombre">Elena García</h2>
+          <p class="perfil__info-miembro">Miembro desde: Enero 2023</p>
+        </div>
+
+        <hr class="perfil__info-divider">
+
+        <!-- Menú de navegación del perfil -->
+        <nav class="perfil__menu">
+          <a href="#">Mis Entradas</a>
+          <a href="#">Métodos de Pago</a>
+          <a href="#">Configuración</a>
+          <a href="login.html" class="perfil__menu--danger">Cerrar Sesión</a>
+        </nav>
+
       </section>
+
+      <!-- Contenido principal: historial de películas -->
+      <section class="perfil__peliculas">
+        <h3 class="perfil__peliculas-titulo">Películas ya vistas</h3>
+
+        <ul class="perfil__peliculas-lista">
+
+          <li class="perfil__peliculas-item">
+            <img
+              src="../assets/img/historial-peliculas/poster-pelicula-0"
+              alt="Zootopia 2"
+              class="perfil__peliculas-imagen"
+            />
+            <div class="perfil__peliculas-info">
+              <div class="perfil__peliculas-titulo-row">
+                <h4 class="perfil__peliculas-nombre">Zootopia 2</h4>
+                <span class="perfil__peliculas-rating">7.5</span>
+              </div>
+              <p class="perfil__peliculas-fecha">
+                <i class="fa-solid fa-circle-check"></i> Visto el 25/10/2023
+              </p>
+            </div>
+          </li>
+
+          <li class="perfil__peliculas-item">
+            <img
+              src="../assets/img/historial-peliculas/poster-pelicula-1"
+              alt="Kill Bill"
+              class="perfil__peliculas-imagen"
+            />
+            <div class="perfil__peliculas-info">
+              <div class="perfil__peliculas-titulo-row">
+                <h4 class="perfil__peliculas-nombre">Kill Bill</h4>
+                <span class="perfil__peliculas-rating">8</span>
+              </div>
+              <p class="perfil__peliculas-fecha">
+                <i class="fa-solid fa-circle-check"></i> Visto el 25/10/2023
+              </p>
+            </div>
+          </li>
+
+          <li class="perfil__peliculas-item">
+            <img
+              src="../assets/img/historial-peliculas/poster-pelicula-2"
+              alt="El Padrino"
+              class="perfil__peliculas-imagen"
+            />
+            <div class="perfil__peliculas-info">
+              <div class="perfil__peliculas-titulo-row">
+                <h4 class="perfil__peliculas-nombre">El Padrino</h4>
+                <span class="perfil__peliculas-rating">8.2</span>
+              </div>
+              <p class="perfil__peliculas-fecha">
+                <i class="fa-solid fa-circle-check"></i> Visto el 15/10/2023
+              </p>
+            </div>
+          </li>
+
+          <li class="perfil__peliculas-item">
+            <img
+              src="../assets/img/historial-peliculas/poster-pelicula-3"
+              alt="Instinto Implacable"
+              class="perfil__peliculas-imagen"
+            />
+            <div class="perfil__peliculas-info">
+              <div class="perfil__peliculas-titulo-row">
+                <h4 class="perfil__peliculas-nombre">Instinto Implacable</h4>
+                <span class="perfil__peliculas-rating">6.2</span>
+              </div>
+              <p class="perfil__peliculas-fecha">
+                <i class="fa-solid fa-circle-check"></i> Visto el 5/10/2023
+              </p>
+            </div>
+          </li>
+
+          <li class="perfil__peliculas-item">
+            <img
+              src="../assets/img/historial-peliculas/poster-pelicula-4"
+              alt="Peaky Blinders: El hombre inmortal"
+              class="perfil__peliculas-imagen"
+            />
+            <div class="perfil__peliculas-info">
+              <div class="perfil__peliculas-titulo-row">
+                <h4 class="perfil__peliculas-nombre">Peaky Blinders: El hombre inmortal</h4>
+                <span class="perfil__peliculas-rating">4.5</span>
+              </div>
+              <p class="perfil__peliculas-fecha">
+                <i class="fa-solid fa-circle-check"></i> Visto el 2/10/2023
+              </p>
+            </div>
+          </li>
+
+          <li class="perfil__peliculas-item">
+            <img
+              src="../assets/img/historial-peliculas/poster-pelicula-5"
+              alt="Avatar: Fuego y Ceniza"
+              class="perfil__peliculas-imagen"
+            />
+            <div class="perfil__peliculas-info">
+              <div class="perfil__peliculas-titulo-row">
+                <h4 class="perfil__peliculas-nombre">Avatar: Fuego y Ceniza</h4>
+                <span class="perfil__peliculas-rating">9.1</span>
+              </div>
+              <p class="perfil__peliculas-fecha">
+                <i class="fa-solid fa-circle-check"></i> Visto el 1/10/2023
+              </p>
+            </div>
+          </li>
+
+          <li class="perfil__peliculas-item">
+            <img
+              src="../assets/img/historial-peliculas/poster-pelicula-6"
+              alt="Spiderman: Sin camino a casa"
+              class="perfil__peliculas-imagen"
+            />
+            <div class="perfil__peliculas-info">
+              <div class="perfil__peliculas-titulo-row">
+                <h4 class="perfil__peliculas-nombre">Spiderman: Sin camino a casa</h4>
+                <span class="perfil__peliculas-rating">9.3</span>
+              </div>
+              <p class="perfil__peliculas-fecha">
+                <i class="fa-solid fa-circle-check"></i> Visto el 25/9/2023
+              </p>
+            </div>
+          </li>
+
+          <li class="perfil__peliculas-item">
+            <img
+              src="../assets/img/historial-peliculas/poster-pelicula-7"
+              alt="El Mago del Kremlin"
+              class="perfil__peliculas-imagen"
+            />
+            <div class="perfil__peliculas-info">
+              <div class="perfil__peliculas-titulo-row">
+                <h4 class="perfil__peliculas-nombre">El Mago del Kremlin</h4>
+                <span class="perfil__peliculas-rating">6.3</span>
+              </div>
+              <p class="perfil__peliculas-fecha">
+                <i class="fa-solid fa-circle-check"></i> Visto el 15/9/2023
+              </p>
+            </div>
+          </li>
+
+          <li class="perfil__peliculas-item">
+            <img
+              src="../assets/img/historial-peliculas/poster-pelicula-8"
+              alt="Super Mario Bros Galaxy"
+              class="perfil__peliculas-imagen"
+            />
+            <div class="perfil__peliculas-info">
+              <div class="perfil__peliculas-titulo-row">
+                <h4 class="perfil__peliculas-nombre">Super Mario Bros Galaxy</h4>
+                <span class="perfil__peliculas-rating">7.6</span>
+              </div>
+              <p class="perfil__peliculas-fecha">
+                <i class="fa-solid fa-circle-check"></i> Visto el 13/9/2023
+              </p>
+            </div>
+          </li>
+
+          <li class="perfil__peliculas-item">
+            <img
+              src="../assets/img/historial-peliculas/poster-pelicula-9"
+              alt="Turbulencias"
+              class="perfil__peliculas-imagen"
+            />
+            <div class="perfil__peliculas-info">
+              <div class="perfil__peliculas-titulo-row">
+                <h4 class="perfil__peliculas-nombre">Turbulencias</h4>
+                <span class="perfil__peliculas-rating">6.5</span>
+              </div>
+              <p class="perfil__peliculas-fecha">
+                <i class="fa-solid fa-circle-check"></i> Visto el 11/8/2023
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
     </main>
 
-    <footer>
-      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+
+        <div class="footer-izquierda">
+          <img src="/assets/img/logo-completo.png" alt="Logo Aurora">
+
+          <p id="descripcion-footer">Tu destino para vivir las mejores experiencias cinematograficas. Descubri, elegi y disfruta del mejor cine.</p>
+        </div>
+      
+        <div class="footer-centro">
+
+          <p>Explorar</p>
+
+          <ul class="nav-explorar">
+            <a href="../index.html">Cartelera</a>
+            <a href="estrenos.html">Próximos estrenos</a>
+            <a href="perfil.html">Mi perfil</a>
+          </ul>
+
+        </div>
+      
+        <div class="footer-derecha">
+
+          <p>Cuenta</p>
+
+          <ul class="nav-cuenta">
+            <a href="registro.html">Registrarse</a>
+            <a href="login.html">Iniciar sesión</a>
+            <a href="perfil.html">Mi perfil</a>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Aurora. Todos los derechos reservados.</p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 512 512"><mask id="SVGuywqVbel"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#SVGuywqVbel)"><path fill="#338af3" d="M0 0h512v144.7L488 256l24 111.3V512H0V367.3L26 256L0 144.7z"/><path fill="#eee" d="M0 144.7h512v222.6H0z"/><path fill="#ffda44" d="m332.4 256l-31.2 14.7l16.7 30.3l-34-6.5l-4.2 34.3l-23.7-25.2l-23.6 25.2l-4.3-34.3l-34 6.5l16.6-30.3l-31.2-14.7l31.3-14.7L194 211l34 6.5l4.3-34.3l23.6 25.2l23.6-25.2l4.4 34.3l34-6.5l-16.7 30.3z"/></g></svg>Bahía Blanca, Argentina</p>
+        </div>
+
     </footer>
+
   </body>
 </html>
+
+
+
