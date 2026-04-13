@@ -8,42 +8,96 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="manifest" href="../assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css"/>
   </head>
 
-  <body>
-    <header>
-      <div>
+  <body class="Fondo">
+    <header class="header">
+      <div class="nav-logo">
         <h1>Cine Aurora</h1>
-        <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
+        <img src="/assets/img/logo-completo.png" alt="logo-cine-aurora" />
       </div>
       <div>
-        <nav>
+        <nav class="nav">
           <a href="../index.html">Inicio</a>
           <a href="./estrenos.html">Próximos estrenos</a>
           <a href="../index.html">Volver</a>
         </nav>
       </div>
+      <!--CERRAR SESIÓN
+      <div class="nav-exit">
+        <span class="exit-icon">
+          <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(250,250,250);"></i>
+        </span>
+        <samp class="exit-text">
+          Cerrar sesión
+        </samp>
+      </div>
+      -->
     </header>
+
     <main>
-      <form action="perfil.html">
-        <h2>Acceso Clientes</h2>
-        <div>
-          <label>Email</label>
+      <div class="gif">
+        <video autoplay loop muted>
+          <source src="../assets/img/gifLogin.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="login"> 
+        <form action="perfil.html">
+        <h1 >Acceso Clientes</h1>
+        <div class="Email">
+          <label class="email">Email</label>
           <input type="email" required />
         </div>
-        <div>
+        <div class="Contraseña">
           <label>Contraseña</label>
           <input type="password" required />
         </div>
         <button type="submit">Ingresar</button>
-        <p>¿No eres miembro? <a href="registro.html">Regístrate</a></p>
+        <p>¿No eres miembro? <a class ="Regístrate" href="registro.html">Regístrate</a></p>
       </form>
+      </div>
     </main>
 
-    <footer>
-      <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
+    <footer class="footer">
+      <div class="footer-izquierda">
+        <img src="/assets/img/logo-completo.png" alt="Logo Aurora">
+
+        <p id="descripcion-footer">Tu destino para vivir las mejores experiencias cinematograficas. Descubri, elegi y disfruta del mejor cine.</p>
+      </div>
+      
+      <div class="footer-centro">
+
+        <p>Explorar</p>
+
+        <ul class="nav-explorar">
+          <a href="index.html">Cartelera</a>
+          <a href="./pages/estrenos.html">Próximos estrenos</a>
+          <a href="./pages/perfil.html">Mi perfil</a>
+        </ul>
+
+      </div>
+      
+      <div class="footer-derecha">
+
+        <p>Cuenta</p>
+
+        <ul class="nav-cuenta">
+          <a href="./pages/registro.html">Registrarse</a>
+          <a href="./pages/login.html">Iniciar sesión</a>
+          <a href="./pages/perfil.html">Mi perfil</a>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aurora. Todos los derechos reservados.</p>
+        <p>🇦🇷 Bahía Blanca, Argentina</p>
+      </div>
+
     </footer>
   </body>
 </html>
