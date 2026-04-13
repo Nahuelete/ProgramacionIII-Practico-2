@@ -10,7 +10,7 @@
   grid-template-columns: 280px 1fr;
   gap: 0px;
   flex: 1;
-  padding: 22px 40px;
+  padding: 20px 40px;
   min-height: 0;
 }
 
@@ -35,7 +35,7 @@
 
 .perfil__info-imagen {
   width: 140px;
-  height: 140px;    /* explícito para anular poster.css */
+  height: 140px;    
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--color-superficie);
@@ -48,23 +48,18 @@
   right: 6px;
   width: 34px;
   height: 34px;
-  background: var(--color-superficie);
+  background: var(--color-secundario);
   border-radius: 50%;
-  border: 2px solid var(--color-fondo);
+  border: 1px solid var(--color-fondo);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: background 0.2s ease;
 }
-
-.perfil__imagen-camara:hover {
-  background: var(--color-superficie);
-}
-
 .perfil__imagen-camara i {
   font-size: 0.75rem;
-  color: var(--color-texto-suave);
+  color: var(--color-fondo);
 }
 
 /* --- Nombre y subtítulo --- */
@@ -194,8 +189,8 @@
 
 .perfil__peliculas-nombre {
   margin: 0;
-  font-size: 0.90rem;
-  font-weight: 500;
+  font-size: 0.98rem;
+  font-weight: 400;
   color: var(--color-texto);
   line-height: 1.6;
   /* Corta texto largo en 2 líneas máximo */
@@ -206,7 +201,7 @@
 }
 
 .perfil__peliculas-rating {
-  font-size: 0.90rem;
+  font-size: 0.98rem;
   font-weight: 700;
   color: var(--color-secundario);
   white-space: nowrap;
@@ -216,7 +211,7 @@
 /* Fecha con checkmark */
 .perfil__peliculas-fecha {
   margin: 0;
-  font-size: 0.88rem;
+  font-size: 0.90rem;
   color: var(--color-texto-suave);
   display: flex;
   align-items: center;
@@ -225,7 +220,7 @@
 
 .perfil__peliculas-fecha i {
   color: var(--color-secundario);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* ==========================================
