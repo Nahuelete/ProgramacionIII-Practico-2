@@ -8,9 +8,9 @@
 .perfil {
   display: grid;
   grid-template-columns: 280px 1fr;
-  gap: 0;
+  gap: 0px;
   flex: 1;
-  padding: 32px 40px;
+  padding: 22px 40px;
   min-height: 0;
 }
 
@@ -138,8 +138,8 @@
 }
 
 .perfil__peliculas-titulo {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: var(--color-secundario);
   margin: 0 0 20px 0;
 }
@@ -174,7 +174,7 @@
 
 .perfil__peliculas-item:hover .perfil__peliculas-imagen {
   transform: translateY(-4px);
-  box-shadow: 0 10px 24px var(--color-fondo);
+  box-shadow: 0 4px 20px var(--color-secundario);
 }
 
 /* --- Info debajo del poster --- */
@@ -194,10 +194,10 @@
 
 .perfil__peliculas-nombre {
   margin: 0;
-  font-size: 0.88rem;
+  font-size: 0.90rem;
   font-weight: 500;
   color: var(--color-texto);
-  line-height: 1.8;
+  line-height: 1.6;
   /* Corta texto largo en 2 líneas máximo */
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -206,7 +206,7 @@
 }
 
 .perfil__peliculas-rating {
-  font-size: 0.88rem;
+  font-size: 0.90rem;
   font-weight: 700;
   color: var(--color-secundario);
   white-space: nowrap;
@@ -216,7 +216,7 @@
 /* Fecha con checkmark */
 .perfil__peliculas-fecha {
   margin: 0;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   color: var(--color-texto-suave);
   display: flex;
   align-items: center;
@@ -226,91 +226,6 @@
 .perfil__peliculas-fecha i {
   color: var(--color-secundario);
   font-size: 0.8rem;
-}
-
-/* ==========================================
-   FOOTER
-   ========================================== */
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  padding: 40px;
-  border-top: 1px solid var(--color-superficie);
-  margin-top: auto;
-}
-
-.footer-izquierda {
-  flex: 2;
-  min-width: 200px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.footer-izquierda img {
-  max-width: 100px;
-  height: auto;
-}
-
-#descripcion-footer {
-  color: var(--color-texto-suave);
-  font-size: 0.85rem;
-  line-height: 1.6;
-  max-width: 320px;
-}
-
-.footer-centro,
-.footer-derecha {
-  flex: 1;
-  min-width: 140px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footer-titulo {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--color-texto);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: var(--color-texto-suave);
-  font-size: 0.88rem;
-  transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
-  color: var(--color-texto);
-}
-
-.footer-bottom {
-  width: 100%;
-  border-top: 1px solid var(--color-superficie);
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.footer-bottom p {
-  font-size: 0.8rem;
-  color: var(--color-texto-suave);
 }
 
 /* ==========================================
