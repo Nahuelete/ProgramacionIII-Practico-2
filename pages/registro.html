@@ -16,9 +16,9 @@
     <div class="lluvia"></div>
 
     <header>
-        <div class="container_logo">
+        <div class="container-logo">
             <h1>Cine Aurora</h1>
-            <img class="logo_imagen" src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
+            <img class="logo-imagen" src="../assets/img/logo-cine.png" alt="logo-cine-aurora" />
         </div>
         <nav>
             <a href="../index.html">Inicio</a>
@@ -56,10 +56,10 @@
                 <hr />
 
                 <div class="container_desplegable">
-                    <button type="button" class="toggle_datos">¿Quieres ayudarnos a mejorar? ↓</button>
+                    <button type="button" class="toggle-datos">¿Quieres ayudarnos a mejorar? ↓</button>
                     
                     <div class="seccion-desplegable">
-                        <p class="p_Mensaje">Estos datos nos ayudan a mejorar tu experiencia.</p>
+                        <p class="p-Mensaje">Estos datos nos ayudan a mejorar tu experiencia.</p>
                         
                         <div class="input-group">
                             <label>Elegí tu color favorito para las butacas</label>
@@ -103,7 +103,7 @@
                     <div class="dropdown-content">
                         <p>¿Ya tienes cuenta?</p>
                         <a href="#">Iniciar Sesión</a>
-                        <hr>
+                        <hr class="linea-terminos">
                         <a href="#">Términos y Condiciones</a>
                     </div>
                 </div>
@@ -111,9 +111,43 @@
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
-    </footer>
+    <footer class="footer">
+
+        <div class="footer-izquierda">
+          <img src="/assets/img/logo-completo.png" alt="Logo Aurora">
+
+          <p id="descripcion-footer">Tu destino para vivir las mejores experiencias cinematograficas. Descubri, elegi y disfruta del mejor cine.</p>
+        </div>
+      
+        <div class="footer-centro">
+
+          <p>Explorar</p>
+
+          <ul class="nav-explorar">
+            <a href="index.html">Cartelera</a>
+            <a href="./pages/estrenos.html">Próximos estrenos</a>
+            <a href="./pages/perfil.html">Mi perfil</a>
+          </ul>
+
+        </div>
+      
+        <div class="footer-derecha">
+
+          <p>Cuenta</p>
+
+          <ul class="nav-cuenta">
+            <a href="./pages/registro.html">Registrarse</a>
+            <a href="./pages/login.html">Iniciar sesión</a>
+            <a href="./pages/perfil.html">Mi perfil</a>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Aurora. Todos los derechos reservados.</p>
+          <p>🇦🇷 Bahía Blanca, Argentina</p>
+        </div>
+
+      </footer>
 
     <script src="../js/registro.js"></script>
 </body>

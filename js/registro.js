@@ -1,4 +1,4 @@
-document.querySelector('.toggle_datos').addEventListener('click', function() {
+document.querySelector('.toggle-datos').addEventListener('click', function() {
   const seccion = document.querySelector('.seccion-desplegable');
   
   // Alterna la clase 'abierto'
