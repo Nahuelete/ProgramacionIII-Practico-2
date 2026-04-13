@@ -1,117 +1,154 @@
 <!doctype html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cine Aurora 📽️ - Registro</title>
-    <meta name="description" content="Cine Aurora - Registro" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
-  </head>
+    <link rel="stylesheet" href="../css/registro.css" />
+</head>
 
-  <body>
+<body>
+    <div class="lluvia"></div>
+
     <header>
-      <div>
-        <h1>Cine Aurora</h1>
-        <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
-      </div>
-      <div>
+        <div class="container-logo">
+            <h1>Cine Aurora</h1>
+            <img class="logo-imagen" src="../assets/img/logo-cine.png" alt="logo-cine-aurora" />
+        </div>
         <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="./estrenos.html">Próximos estrenos</a>
-          <a href="../index.html">Volver</a>
+            <a href="../index.html">Inicio</a>
+            <a href="../pages/estrenos.html">Próximos estrenos</a>
+            <a href="../index.html">Volver</a>
         </nav>
-      </div>
     </header>
 
-    <main>
-      <div>
-        <form action="login.html">
-          <h2>Crear nueva cuenta</h2>
-          <div>
-            <label>Nombre Completo</label>
-            <input type="text" required />
-          </div>
-          <div>
-            <label>Email</label>
-            <input type="email" required />
-          </div>
-          <div>
-            <label>Fecha de nacimiento</label>
-            <input type="date" required />
-          </div>
-          <div>
-            <label>Contraseña</label>
-            <input type="password" required />
-          </div>
+    <main class="registro-main">
+        <div class="registro-container">
+            <form class="login-form" action="../pages/login.html">
+                <h2>Crear nueva cuenta</h2>
+                
+                <div class="input-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" required />
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" required />
+                </div>
+                <div class="input-group">
+                    <label>Fecha de nacimiento</label>
+                    <input type="date" required />
+                </div>
+                <div class="input-group">
+                    <label>Contraseña</label>
+                    <input type="password" required />
+                </div>
+                <div class="input-group">
+                    <label>Confirmar contraseña</label>
+                    <input type="password" required />
+                </div>
 
-          <div>
-            <label>Confirmar contraseña</label>
-            <input type="password" required />
-          </div>
+                <hr />
 
-          <hr />
+                <div class="container_desplegable">
+                    <button type="button" class="toggle-datos">¿Quieres ayudarnos a mejorar? ↓</button>
+                    
+                    <div class="seccion-desplegable">
+                        <p class="p-Mensaje">Estos datos nos ayudan a mejorar tu experiencia.</p>
+                        
+                        <div class="input-group">
+                            <label>Elegí tu color favorito para las butacas</label>
+                            <input type="color" />
+                        </div>
 
-          <div>
-            <div>
-              <h3>Datos para ayudar al cine</h3>
-              <p>Estos datos nos ayudan a mejorar tu experiencia.</p>
-            </div>
-            <div>
-              <div>
-                <label>Elegí tu color favorito para las butacas</label>
-                <input type="color" />
-              </div>
+                        <div class="input-group">
+                            <label>¿Cuántas entradas comprás en general? (0-10)</label>
+                            <input type="range" min="0" max="10" />
+                        </div>
 
-              <div>
-                <label
-                  >¿Cuántas entradas comprás en general? Min: 0 | Max: 10</label
-                >
-                <input type="range" min="0" max="10" />
-              </div>
+                        <div class="input-group">
+                            <label>Seleccioná tu género favorito</label>
+                            <select>
+                                <option>Acción</option>
+                                <option>Drama</option>
+                                <option>Ciencia ficción</option>
+                                <option>Terror</option>
+                                <option>Comedia</option>
+                            </select>
+                        </div>
 
-              <div>
-                <label>Seleccioná tu género favorito</label>
-                <select>
-                  <option>Acción</option>
-                  <option>Drama</option>
-                  <option>Ciencia ficción</option>
-                  <option>Terror</option>
-                  <option>Comedia</option>
-                  <option>Romance</option>
-                </select>
-              </div>
+                        <div class="snack-group">
+                            <label>Elegí tu snack favorito:</label>
+                            <div class="radio-option">
+                                <input type="radio" name="snack" id="dulce"> <label for="dulce">Pochoclo dulce</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="snack" id="salado"> <label for="salado">Pochoclo salado</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="snack" id="choc"> <label for="choc">Chocolate</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-              <div>
-                <label>Elegí tu snack favorito</label>
-
-                <input type="radio" name="snack" />
-                <label>Pochoclo dulce</label>
-
-                <input type="radio" name="snack" />
-                <label>Pochoclo salado</label>
-
-                <input type="radio" name="snack" />
-                <label>Chocolate</label>
-
-                <input type="radio" name="snack" />
-                <label>Frutos secos</label>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button type="submit">Regístrate</button>
-          </div>
-        </form>
-      </div>
-
-      <footer>
-        <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
-      </footer>
+                <div class="btn-dropdown-wrapper">
+                    <button type="submit" class="btn-principal">Regístrate</button>
+                    
+                    <div class="dropdown-content">
+                        <p>¿Ya tienes cuenta?</p>
+                        <a href="../pages/login.html">Iniciar Sesión</a>
+                        <hr class="linea-terminos">
+                        <a href="#">Términos y Condiciones</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
-  </body>
+
+    <footer class="footer">
+
+        <div class="footer-izquierda">
+          <img src="/assets/img/logo-completo.png" alt="Logo Aurora">
+
+          <p id="descripcion-footer">Tu destino para vivir las mejores experiencias cinematograficas. Descubri, elegi y disfruta del mejor cine.</p>
+        </div>
+      
+        <div class="footer-centro">
+
+          <p>Explorar</p>
+
+          <ul class="nav-explorar">
+            <a href="../index.html">Cartelera</a>
+            <a href="../pages/estrenos.html">Próximos estrenos</a>
+            <a href="../pages/perfil.html">Mi perfil</a>
+          </ul>
+
+        </div>
+      
+        <div class="footer-derecha">
+
+          <p>Cuenta</p>
+
+          <ul class="nav-cuenta">
+            <a href="../pages/registro.html">Registrarse</a>
+            <a href="../pages/login.html">Iniciar sesión</a>
+            <a href="../pages/perfil.html">Mi perfil</a>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Aurora. Todos los derechos reservados.</p>
+          <p>🇦🇷 Bahía Blanca, Argentina</p>
+        </div>
+
+      </footer>
+
+    <script src="../js/registro.js"></script>
+</body>
 </html>
