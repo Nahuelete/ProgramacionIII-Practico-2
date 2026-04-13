@@ -30,7 +30,7 @@ Aurora consiste en una plataforma web profesional para un cine de estética mini
 - ✅ Menu de registro
 - ✅ Menu de inicio de sesion
 - ✅ Página de próximos estrenos
-- ✅ Página de Perfil del Usuario
+- ✅ Página de perfil del usuario
 
 ---
 
