@@ -520,7 +520,7 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.021);
   height: 110px;
-  width: 680px;
+  width: 750px;
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.8s ease;
@@ -555,7 +555,7 @@
 #btn-verEstrenos-encontrar-pelicula {
   position: relative;
   overflow: hidden;
-  margin-left: 30px;
+  margin-left: 40px;
   width: 200px;
   padding: 13px 15px;
   font-size: 13px;
