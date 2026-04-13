@@ -222,6 +222,11 @@
   color: var(--color-secundario);
   font-size: 1rem;
 }
+/* Alineo icono de Argentina del footer con el texto de Bahia Blanca */
+p>svg{
+  vertical-align: middle;
+  padding-right: 8px;
+}
 
 /* ==========================================
    MEDIA QUERIES
