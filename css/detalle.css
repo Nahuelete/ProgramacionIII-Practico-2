@@ -90,3 +90,31 @@
 .color-dark-yellow {
     color: rgba(155, 155, 39, 0.898);
 }
+
+@media (max-width: 1024px) {
+    #pelicula {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #poster-area {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    #texto-pelicula {
+        padding-right: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    #datos-pelicula {
+        flex-direction: column;
+    }
+
+    #btn-compra {
+        width: 50%;
+    }
+}
