@@ -51,6 +51,16 @@
     gap: 20px;
 }
 
+#rating {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+#stars {
+    color: gold;
+}
+
 #btn-comprar {
     display: inline-block;
     padding: 12px 20px;
@@ -64,6 +74,18 @@
 }
 
 #btn-comprar:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, #d70404de, #d70404de);
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #d70404de, #d70404de);
+}
+
+.color-gray {
+    color: rgb(198, 188, 188);
+}
+
+.color-soft-red {
+    color: rgb(214, 122, 110);
+}
+
+.color-dark-yellow {
+    color: rgba(155, 155, 39, 0.898);
 }
