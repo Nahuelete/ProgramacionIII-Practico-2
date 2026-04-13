@@ -232,19 +232,9 @@ p>svg{
    MEDIA QUERIES
    ========================================== */
 
-/* Tablet (≤ 1024px): 3 columnas en la grilla */
+/* Laptop / Desktop pequeño (≤ 1024px) */
 @media (max-width: 1024px) {
   .perfil__peliculas-lista {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-/* ── Tablet chica (≤ 768px) ── */
-@media (max-width: 768px) {
-  
-}
-
-/* ── Móvil (≤ 480px) ── */
-@media (max-width: 480px) {
-  
 }
