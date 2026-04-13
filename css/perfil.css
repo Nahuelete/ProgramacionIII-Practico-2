@@ -239,75 +239,12 @@
   }
 }
 
-/* Tablet chica (≤ 768px): sidebar arriba, contenido abajo */
+/* ── Tablet chica (≤ 768px) ── */
 @media (max-width: 768px) {
-  .perfil {
-    grid-template-columns: 1fr;
-    padding: 24px 20px;
-    gap: 32px;
-  }
-
-  .perfil__info {
-    border-right: none;
-    border-bottom: 1px solid var(--color-superficie);
-    padding-right: 0;
-    padding-bottom: 28px;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .perfil__info-header {
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .perfil__menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-
-  .perfil__menu a {
-    font-size: 0.85rem;
-    padding: 8px 12px;
-    background: var(--color-superficie);
-  }
-
-  .perfil__peliculas {
-    padding-left: 0;
-  }
-
-  .perfil__peliculas-lista {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  
 }
 
-/* Móvil (≤ 480px): 2 columnas en la grilla */
+/* ── Móvil (≤ 480px) ── */
 @media (max-width: 480px) {
-  .perfil__peliculas-lista {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .perfil__info {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .perfil__info-header {
-    align-items: center;
-  }
-
-  .footer {
-    flex-direction: column;
-    gap: 24px;
-    padding: 24px 20px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  
 }
