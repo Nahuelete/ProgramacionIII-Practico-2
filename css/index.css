@@ -64,6 +64,10 @@
   transition: transform 0.3s ease;
 }
 
+.scroll-peliculas a {
+  text-decoration: none;
+}
+
 .scroll-peliculas li::after {
   content: "";
   position: absolute;
@@ -440,6 +444,10 @@
   padding-right: 5px;
 }
 
+#btn-verMas-pelicula a {
+  text-decoration: none;
+}
+
 #btn-verMas-pelicula:hover {
   transform: translateY(-1px);
   border-color: rgba(255, 255, 255, 0.35);
@@ -568,10 +576,15 @@
   transition: all 0.2s ease;
 }
 
+#btn-verEstrenos-encontrar-pelicula a {
+ text-decoration: none;
+}
+
 #btn-verEstrenos-encontrar-pelicula i {
   padding-left: 10px;
   transition: transform 0.5s ease;
 }
+
 
 /* Efecto relleno desde abajo */
 #btn-verEstrenos-encontrar-pelicula::before {
@@ -596,8 +609,8 @@
   transform: translateX(30%);
 }
 
-/* Footer */     /* VER */
-footer {
+/* Footer */
+.footer {
   width: 100%;
   padding: 50px 20px 20px;
   background-color: transparent;
@@ -605,10 +618,10 @@ footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   color: white;
   display: grid;
-  grid-template-columns: minmax(auto, 350px) minmax(auto, 200px) minmax(auto, 300px);
+  grid-template-columns: 280px 180px 200px;
   justify-content: space-between;
   align-items: start;
-  column-gap: 60px;
+  column-gap: 80px;
   row-gap: 0;
   box-sizing: border-box;
 }
@@ -650,12 +663,20 @@ footer {
   margin: 0;
 }
 
-.nav-explorar li:hover {
+.nav-explorar a {
+  text-decoration: none;
+}
+
+.nav-explorar a:hover {
   color: #ffcc00;
   cursor: pointer;
 }
 
-.nav-cuenta li:hover {
+.nav-cuenta a {
+  text-decoration: none;
+}
+
+.nav-cuenta a:hover {
   color: #ff4d4d;
   cursor: pointer;
 }
