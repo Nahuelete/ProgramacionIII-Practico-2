@@ -1,0 +1,211 @@
+:root {
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 20px;
+}
+
+.estrenos-main {
+  width: 100%;
+  padding: var(--spacing-32);
+}
+
+.estrenos-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.estrenos-title {
+  text-align: center;
+  margin-bottom: var(--spacing-32);
+}
+
+.estrenos-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-20);
+  margin-bottom: var(--spacing-8);
+}
+
+.estrenos-title-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.estrenos-popcorn {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 18px rgba(255, 204, 0, 0.3));
+}
+
+.estrenos-title h1 {
+  font-size: 2.2rem;
+  margin-bottom: var(--spacing-12);
+}
+
+.estrenos-title p {
+  color: var(--color-texto-suave);
+  font-size: 1rem;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.estrenos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-24);
+}
+
+.estreno-card {
+  background-color: rgba(31, 31, 31, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.estreno-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(255, 77, 77, 0.2);
+}
+
+.estreno-card img {
+  width: 100%;
+  height: 340px;
+  object-fit: contain;
+  display: block;
+  background-color: #111111;
+}
+
+.estreno-card-content {
+  padding: var(--spacing-20);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-12);
+}
+
+.estreno-tag {
+  display: inline-block;
+  width: fit-content;
+  padding: var(--spacing-8) var(--spacing-12);
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primario),
+    var(--color-secundario)
+  );
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.estreno-card-content h2 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.estreno-card-content p {
+  color: var(--color-texto-suave);
+  line-height: 1.5;
+}
+
+.estreno-date {
+  color: var(--color-secundario) !important;
+  font-weight: 700;
+}
+
+.estreno-button {
+  display: inline-block;
+  width: fit-content;
+  margin-top: var(--spacing-8);
+  padding: var(--spacing-12) var(--spacing-16);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    var(--color-primario),
+    var(--color-secundario)
+  );
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.estreno-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.site-footer {
+  text-align: center;
+  padding: var(--spacing-24);
+  margin-top: var(--spacing-32);
+}
+
+@media (max-width: 1024px) {
+  .estrenos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: var(--spacing-16);
+    padding: var(--spacing-16);
+  }
+
+  .nav {
+    position: static;
+    transform: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-12);
+  }
+
+  .nav-logo img {
+    max-width: 220px;
+  }
+
+  .estrenos-main {
+    padding: var(--spacing-16);
+  }
+
+  .estrenos-title-box {
+    flex-direction: column;
+    gap: var(--spacing-12);
+  }
+
+  .estrenos-popcorn {
+    width: 70px;
+    height: 70px;
+  }
+
+  .estrenos-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .estrenos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .estreno-card img {
+    height: 300px;
+  }
+}

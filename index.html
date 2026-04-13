@@ -13,46 +13,702 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" href="./assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/pages/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
-    <header class="header">
 
+    <header class="header">
       <div class="nav-logo">
         <img src="/assets/img/logo-completo.png" alt="Logo Aurora">
       </div>
     
       <nav class="nav">
 
-        <a href="#" class="active">Cartelera</a>
-        <a href="#">Próximos estrenos</a>
-        <a href="#">
+        <a href="index.html" class="active">Cartelera</a>
+        <a href="./pages/estrenos.html">Próximos estrenos</a>
+        <a href="./pages/perfil.html">
           <i class="fa-solid fa-user"></i> Mi Perfil
         </a>
 
       </nav>
 
-      <div class="nav-exit">
-        <span class="exit-icon">
-          <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(255, 255, 255);"></i>
-        </span>
-      
-        <span class="exit-text">
-          Cerrar sesión
-        </span>
-      </div>
+        <a href="./pages/registro.html" class="nav-exit">
+          <div class="exit-icon">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </div>
 
+          <p class="exit-text">
+            Cerrar sesión
+          </p>
+
+        </a>
     </header>
 
     <main>
-      <section>
-       
-      </section>
+      <!-- TITULO -->
+       <h1 id="titulo">Cartelera</h1>
+       <p id="subtitulo">13/04/2026</p>
+
+      <!-- SCROLL PELICULAS -->
+      <div class="scroll-peliculas">
+         <ul>
+
+          <!-- SPIDERMAN -->
+          <li> 
+            <img src="/assets/img/spiderman.png" alt="Spider-Man: Lejos De Casa"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">4.5</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">2019 - Acción - 2h 9m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+          
+          <!-- AVENGERS -->
+          <li> 
+            <img src="/assets/img/avengers.png" alt="Avengers: Doomsday"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">4</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">2026 - Ciencia Ficcion - 2h 33m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+          
+          <!-- IT -->
+          <li> 
+            <img src="/assets/img/it.png" alt="It"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">3.5</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">2019 - Terror - 2h 49m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+
+          <!-- BAD BOYS-->
+          <li> 
+            <img src="/assets/img/badboys.png" alt="Bad Boys"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">4</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">2003 - Comedia y Accion - 2h 26m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+          
+          <!-- TITANIC -->
+          <li> 
+            <img src="/assets/img/titanic.png" alt="Titanic"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">5</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">1998 - Drama y Romance - 3h 14m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+          
+          <!--HOMBRES DE NEGRO -->
+          <li> 
+            <img src="/assets/img/hombresdenegro.png" alt="Hombres De Negro"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">4.5</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">1997 - Comedia y Sci-Fi - 1h 38m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+
+          <!-- Duplicados -->
+
+          <!-- SPIDERMAN -->
+          <li> 
+            <img src="/assets/img/spiderman.png" alt="Spiderman: Lejos De Casa"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">4.5</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">2019 - Acción - 2h 9m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+          
+          <!-- AVENGERS -->
+          <li> 
+            <img src="/assets/img/avengers.png" alt="Avengers: Doomsday"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">4</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">2026 - Ciencia Ficcion - 2h 33m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+          
+          <!-- IT -->
+          <li> 
+            <img src="/assets/img/it.png" alt="It"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">3.5</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">2019 - Terror - 2h 49m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+
+          <!-- BAD BOYS-->
+          <li> 
+            <img src="/assets/img/badboys.png" alt="Bad Boys"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">4</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">2003 - Comedia y Accion - 2h 26m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+          
+          <!-- TITANIC -->
+          <li> 
+            <img src="/assets/img/titanic.png" alt="Titanic"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">5</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">1998 - Drama y Romance - 3h 14m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+          
+          <!-- HOMBRES DE NEGRO -->
+          <li> 
+            <img src="/assets/img/hombresdenegro.png" alt="Hombres De Negro"> 
+
+           <div class="diseño-hover">
+
+              <p class="rating">4.5</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+              </div>
+
+              <p class="info">1997 - Comedia y Sci-Fi - 1h 38m</p>
+
+              <button class="btn-ver-mas"> <a href="./pages/detalle.html">Ver más</a> </button>
+
+            </div>
+            
+          </li>
+
+         </ul>
+        </div>
+
+        <hr class="divider">
+
+        <!-- TITULO GRID PELICULAS -->
+         <h1 id="titulo-grid">Comprar Tickets</h1>
+         <p id="subtitulo-grid">¡Elegí, pagá y disfrutá!</p>
+         
+        <!-- GRID PELICULAS -->
+      <div class="grid-superior">
+        
+        <!-- SPIDERMAN -->
+        <div class="fondo"> 
+
+          <img src="/assets/img/spiderman.png" alt="Spider-Man: Lejos De Casa"> 
+
+          <div class="info-lateral">
+
+            <div class="genero">
+              <div class="Accion">
+                <p>Acción</p>
+              </div>
+            </div>
+
+            <p class="titulo-pelicula">Spider-Man:<br> Lejos De Casa</p>
+            
+            <p class="info-pelicula">2019 · Acción · 2h 9m</p>
+
+            <div class="stars-pelicula">
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+
+              <p class="rating-pelicula">4.5</p>
+
+              <p class="votos-pelicula">(10.8K)</p>
+            </div>
+
+            <p class="titulo-director-pelicula">Director</p>
+
+            <p class="director-pelicula">Jon Watts</p>
+
+            <p class="titulo-reparto-pelicula">Reparto</p>
+
+            <p class="reparto-pelicula">Tom Holland, Jacob Batalon, Zendaya</p>
+
+            <div class="botones-pelicula">
+              <button id="btn-comprar-pelicula"> <i class="fa-solid fa-cart-arrow-down" style="color: rgb(255, 255, 255);"></i> Comprar</button>
+              <button id="btn-verMas-pelicula"> <i class="fa-solid fa-circle-info" style="color: rgb(255, 212, 59);"></i> <a href="./pages/detalle.html">Ver detalles</a> </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- AVENGERS -->
+        <div class="fondo"> 
+
+          <img src="/assets/img/avengers.png" alt="Avengers: Doomsday"> 
+
+          <div class="info-lateral">
+
+            <div class="genero">
+              <div class="Sci-Fi">
+                <p>Sci-Fi</p>
+              </div>
+            </div>
+
+            <p class="titulo-pelicula">Avengers: Doomsday</p>
+            
+            <p class="info-pelicula">2026 · Sci-Fi · 2h 33m</p>
+
+            <div class="stars-pelicula">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+
+              <p class="rating-pelicula">4</p>
+
+              <p class="votos-pelicula">(8.3K)</p>
+            </div>
+
+            <p class="titulo-director-pelicula">Director</p>
+
+            <p class="director-pelicula">Joe Russo, Anthony Russo</p>
+
+            <p class="titulo-reparto-pelicula">Reparto</p>
+
+            <p class="reparto-pelicula">Chris Hemsworth, Anthony Mackie, Vanessa Kirby</p>
+
+            <div class="botones-pelicula">
+              <button id="btn-comprar-pelicula"> <i class="fa-solid fa-cart-arrow-down" style="color: rgb(255, 255, 255);"></i> Comprar</button>
+              <button id="btn-verMas-pelicula"> <i class="fa-solid fa-circle-info" style="color: rgb(255, 212, 59);"></i> <a href="./pages/detalle.html">Ver detalles</a> </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="grid-medio">
+        
+        <!-- IT -->
+        <div class="fondo"> 
+
+          <img src="/assets/img/it.png" alt="IT: Capitulo Dos"> 
+
+          <div class="info-lateral">
+
+            <div class="genero">
+              <div class="Terror">
+                <p>Terror</p>
+              </div>
+            </div>
+
+            <p class="titulo-pelicula">IT: Capitulo Dos</p>
+            
+            <p class="info-pelicula">2019 · Terror · 2h 49m</p>
+
+            <div class="stars-pelicula">
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+
+              <p class="rating-pelicula">3.5</p>
+
+              <p class="votos-pelicula">(7.5K)</p>
+            </div>
+
+            <p class="titulo-director-pelicula">Director</p>
+
+            <p class="director-pelicula">Andy Muschietti</p>
+
+            <p class="titulo-reparto-pelicula">Reparto</p>
+
+            <p class="reparto-pelicula">Bill Skarsgård, Jessica Chastain, James McAvoy</p>
+
+            <div class="botones-pelicula">
+              <button id="btn-comprar-pelicula"> <i class="fa-solid fa-cart-arrow-down" style="color: rgb(255, 255, 255);"></i> Comprar</button>
+              <button id="btn-verMas-pelicula"> <i class="fa-solid fa-circle-info" style="color: rgb(255, 212, 59);"></i> <a href="./pages/detalle.html">Ver detalles</a> </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- BAD BOYS -->
+        <div class="fondo"> 
+
+          <img src="/assets/img/badboys.png" alt="Avengers: Doomsday"> 
+
+          <div class="info-lateral">
+
+            <div class="genero">
+              <div class="Comedia">
+                <p>Comedia</p>
+              </div>
+  
+              <div class="Accion">
+                <p>Accion</p>
+              </div>
+            </div>
+
+            <p class="titulo-pelicula">Bad Boys II</p>
+            
+            <p class="info-pelicula">2003 · Comedia y Accion · 2h 26m</p>
+
+            <div class="stars-pelicula">
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                <i class="fa-regular fa-star" style="color: rgb(255, 212, 59);"></i>
+
+              <p class="rating-pelicula">4</p>
+
+              <p class="votos-pelicula">(5.1K)</p>
+            </div>
+
+            <p class="titulo-director-pelicula">Director</p>
+
+            <p class="director-pelicula">Michael Bay</p>
+
+            <p class="titulo-reparto-pelicula">Reparto</p>
+
+            <p class="reparto-pelicula">Martin Lawrence, Will Smith, Jordi Mollà</p>
+
+            <div class="botones-pelicula">
+              <button id="btn-comprar-pelicula"> <i class="fa-solid fa-cart-arrow-down" style="color: rgb(255, 255, 255);"></i> Comprar</button>
+              <button id="btn-verMas-pelicula"> <i class="fa-solid fa-circle-info" style="color: rgb(255, 212, 59);"></i> <a href="./pages/detalle.html">Ver detalles</a> </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="grid-inferior">
+        
+        <!-- TITANIC -->
+        <div class="fondo"> 
+
+          <img src="/assets/img/titanic.png" alt="Titanic"> 
+
+          <div class="info-lateral">
+
+            <div class="genero">
+              <div class="Drama">
+                <p>Drama</p>
+              </div>
+
+              <div class="Romance">
+                <p>Romance</p>
+              </div>
+            </div>
+
+            <p class="titulo-pelicula">Titanic</p>
+            
+            <p class="info-pelicula">1998 · Drama y Romance · 3h 14m</p>
+
+            <div class="stars-pelicula">
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+
+              <p class="rating-pelicula">5</p>
+
+              <p class="votos-pelicula">(23.5K)</p>
+            </div>
+
+            <p class="titulo-director-pelicula">Director</p>
+
+            <p class="director-pelicula">James Cameron</p>
+
+            <p class="titulo-reparto-pelicula">Reparto</p>
+
+            <p class="reparto-pelicula">Leonardo DiCaprio, Kate Winslet, Billy Zane</p>
+
+            <div class="botones-pelicula">
+              <button id="btn-comprar-pelicula"> <i class="fa-solid fa-cart-arrow-down" style="color: rgb(255, 255, 255);"></i> Comprar </button>
+              <button id="btn-verMas-pelicula"> <i class="fa-solid fa-circle-info" style="color: rgb(255, 212, 59);"></i> <a href="./pages/detalle.html">Ver detalles</a> </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- HOMBRES DE NEGRO -->
+        <div class="fondo"> 
+
+          <img src="/assets/img/hombresdenegro.png" alt="Hombres De Negro"> 
+
+          <div class="info-lateral">
+
+            <div class="genero">
+              <div class="Comedia">
+                <p>Comedia</p>
+              </div>
+  
+              <div class="Sci-Fi">
+                <p>Sci-Fi</p>
+              </div>
+            </div>
+
+            <p class="titulo-pelicula">Hombres De Negro</p>
+            
+            <p class="info-pelicula">1997 · Comedia y Sci-Fi · 1h 38m</p>
+
+            <div class="stars-pelicula">
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+
+              <p class="rating-pelicula">4.5</p>
+
+              <p class="votos-pelicula">(8.8K)</p>
+            </div>
+
+            <p class="titulo-director-pelicula">Director</p>
+
+            <p class="director-pelicula">Barry Sonnenfeld</p>
+
+            <p class="titulo-reparto-pelicula">Reparto</p>
+
+            <p class="reparto-pelicula">Tommy Lee Jones, Will Smith, Linda Fiorentino</p>
+
+            <div class="botones-pelicula">
+              <button id="btn-comprar-pelicula"> <i class="fa-solid fa-cart-arrow-down" style="color: rgb(255, 255, 255);"></i> Comprar</button>
+              <button id="btn-verMas-pelicula"> <i class="fa-solid fa-circle-info" style="color: rgb(255, 212, 59);"></i> <a href="./pages/detalle.html">Ver detalles</a> </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="encontrar-pelicula">
+
+        <img src="/assets/img/pochoclos.png" alt="Pochoclos">
+        
+        <div class="textos-encontrar-pelicula">
+
+          <p id="titulo-encontrar-pelicula">¿No encontras tu pelicula?</p>
+
+          <p id="subtitulo-encontrar-pelicula">Enterate de los proximos estrenos y no te pierdas nada</p>
+
+        </div>
+
+        <button id="btn-verEstrenos-encontrar-pelicula"> <a href="./pages/estrenos.html">Ver estrenos</a> <i class="fa-solid fa-arrow-right" style="color: rgb(255, 255, 255);"></i> </button>
+
+      </div>
+
     </main>
 
-    <footer>
-      <p> &copy; 2026 Cine Aurora - Todos los derechos reservados</p>
-    </footer>
+      <footer class="footer">
+
+        <div class="footer-izquierda">
+          <img src="/assets/img/logo-completo.png" alt="Logo Aurora">
+
+          <p id="descripcion-footer">Tu destino para vivir las mejores experiencias cinematograficas. Descubri, elegi y disfruta del mejor cine.</p>
+        </div>
+      
+        <div class="footer-centro">
+
+          <p>Explorar</p>
+
+          <ul class="nav-explorar">
+            <a href="index.html">Cartelera</a>
+            <a href="./pages/estrenos.html">Próximos estrenos</a>
+            <a href="./pages/perfil.html">Mi perfil</a>
+          </ul>
+
+        </div>
+      
+        <div class="footer-derecha">
+
+          <p>Cuenta</p>
+
+          <ul class="nav-cuenta">
+            <a href="./pages/registro.html">Registrarse</a>
+            <a href="./pages/login.html">Iniciar sesión</a>
+            <a href="./pages/perfil.html">Mi perfil</a>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Aurora. Todos los derechos reservados.</p>
+          <p>🇦🇷 Bahía Blanca, Argentina</p>
+        </div>
+
+      </footer>
+
   </body>
 </html>

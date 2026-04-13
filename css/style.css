@@ -1,38 +1,214 @@
+/* @import url(./components/poster.css); */
 @import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
 
-/* Paletas de colores que pueden usar: */
-
-/* Paleta 1: */
-/*:root {
-  --color-fondo: #0f172a;
-  --color-superficie: #1e293b;
-  --color-primario: #e11d48;
-  --color-secundario: #f59e0b;
-  --color-texto: #f8fafc;
-  --color-texto-suave: #94a3b8;
-}*/
-
-/* Paleta 2: */
-/*:root {
-  --color-fondo: #fff8e7;
-  --color-superficie: #ffe8a3;
-  --color-primario: #e63946;
-  --color-secundario: #ffb703;
-  --color-texto: #1d3557;
-  --color-texto-suave: #457b9d;
-}*/
-
-/* Paleta 3: */
-/*:root {
-  --color-fondo: #141414;
+/* Paleta */
+:root {
+  --color-fondo: #000000;;
   --color-superficie: #1f1f1f;
-  --color-primario: #e50914;
-  --color-secundario: #00b4d8;
+  --color-primario: #ff4d4d;
+  --color-secundario: #ffcc00;
   --color-texto: #ffffff;
-  --color-texto-suave: #b3b3b3;
-}*/
+  --color-texto-suave: #cccccc;
+}
 
-a {
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color-texto);
   font-family: "Fira Sans", sans-serif;
 }
 
+ /* Fondo Original */
+body {
+    background: #000;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+   /* Footer Abajo */
+  main {
+    flex: 1;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Glow principal */
+  body::before {
+    content: "";
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    top: 20%;
+    left: 30%;
+    background: radial-gradient(circle, #ffcc00, transparent 50%);
+    filter: blur(120px);
+    animation: moveGlow 8s ease-in-out infinite alternate;
+    z-index: -1;
+  }
+  
+  /* Glow secundario */
+  body::after {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 60%;
+    left: 60%;
+    background: radial-gradient(circle, #ff4d4d, transparent 50%);
+    filter: blur(120px);
+    animation: moveGlow2 10s ease-in-out infinite alternate;
+    z-index: -1;
+  }
+  
+  /* Animaciones */
+  @keyframes moveGlow {
+    from {
+      transform: translate(-50px, -50px);
+    }
+    to {
+      transform: translate(50px, 50px);
+    }
+  }
+  
+  @keyframes moveGlow2 {
+    from {
+      transform: translate(50px, -50px);
+    }
+    to {
+      transform: translate(-50px, 50px);
+    }
+  }
+  /* Fin Fondo */
+
+/* Header */
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+  /* Fin Header */
+
+  /* Nav Logo */
+  .nav-logo img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  /* Nav Central */
+  .nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav i {
+    margin-right: 5px;
+  }
+
+  .nav a {
+    position: relative;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 999px;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+  }
+  
+  .nav a:hover {
+    color: white;
+  }
+
+  /* Efecto relleno desde abajo */
+  .nav a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #ff4d4d, #ffcc00);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+  }
+  
+  .nav a:hover::before {
+    transform: translateY(0);
+  }
+  
+  .nav a:hover {
+    color: #fff;
+  }
+  
+  /* ACTIVO */
+  .nav a.active {
+    color: #fff;
+  }
+  /* Color remarcado sobre la pagina que se encuentra el usuario 
+     IMPORTANTE: Modificar el HTML, colocando la clase "active" en el enlace correspondiente a la página actual
+  */
+  .nav a.active::before {
+    transform: translateY(0);
+  }
+ 
+  /* Nav Exit */
+  .nav-exit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    background: transparent;
+    transition: all 0.4s ease;
+  }
+  
+  .exit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .exit-text {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(20px);
+    white-space: nowrap;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold;
+    transition: all 0.4s ease;
+  }
+
+  .nav-exit:hover {
+    width: 160px;
+    background: linear-gradient(90deg, #ff4d4d, #ffcc00);
+  }
+
+  .nav-exit:hover .exit-icon {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  
+  .nav-exit:hover .exit-text {
+    opacity: 1;
+    transform: translateX(0);
+  }
