@@ -1,123 +1,398 @@
-.contenedor{
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    
+.contenedor {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* ---------- Área principal: sidebar + contenido ---------- */
 .perfil {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 56px;
-    padding: 16px 40px;
-    flex: 1; /* Esto hace que ocupe todo el espacio entre el header y el footer */
-    min-height: 0;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  flex: 1;
+  padding: 32px 40px;
+  min-height: 0;
 }
 
-.perfil__info{
-    display: flex;
+/* ==========================================
+   SIDEBAR IZQUIERDO
+   ========================================== */
+.perfil__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-right: 32px;
+  border-right: 1px solid var(--color-superficie);
+}
+
+/* --- Foto de perfil con ícono de cámara --- */
+.perfil__imagen-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+
+.perfil__info-imagen {
+  width: 140px;
+  height: 140px;    /* explícito para anular poster.css */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-superficie);
+  display: block;
+}
+
+.perfil__imagen-camara {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 34px;
+  height: 34px;
+  background: var(--color-superficie);
+  border-radius: 50%;
+  border: 2px solid var(--color-fondo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.perfil__imagen-camara:hover {
+  background: var(--color-superficie);
+}
+
+.perfil__imagen-camara i {
+  font-size: 0.75rem;
+  color: var(--color-texto-suave);
+}
+
+/* --- Nombre y subtítulo --- */
+.perfil__info-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.perfil__info-nombre {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-texto);
+  margin: 0;
+}
+
+.perfil__info-miembro {
+  font-size: 0.82rem;
+  color: var(--color-texto-suave);
+  margin: 0;
+}
+
+/* --- Separador --- */
+.perfil__info-divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--color-superficie);
+}
+
+/* --- Menú lateral --- */
+.perfil__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.perfil__menu a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-texto-suave);
+  font-size: 0.95rem;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.perfil__menu a:hover {
+  color: var(--color-texto);
+  background: var(--color-superficie);
+}
+
+.perfil__menu a.perfil__menu--danger {
+  color: var(--color-primario);
+}
+
+.perfil__menu a.perfil__menu--danger:hover {
+  background: var(--color-superficie);
+  color: var(--color-primario);
+}
+
+/* ==========================================
+   SECCIÓN DERECHA: PELÍCULAS
+   ========================================== */
+.perfil__peliculas {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.perfil__peliculas-titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-secundario);
+  margin: 0 0 20px 0;
+}
+
+/* --- Grid de películas --- */
+.perfil__peliculas-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px 24px;
+}
+
+/* --- Cada ítem de película --- */
+.perfil__peliculas-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.perfil__peliculas-imagen {
+  width: 100%;
+  height: auto;           /* anula el height: 100px de poster.css */
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.perfil__peliculas-item:hover .perfil__peliculas-imagen {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px var(--color-fondo);
+}
+
+/* --- Info debajo del poster --- */
+.perfil__peliculas-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Fila de título + rating */
+.perfil__peliculas-titulo-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.perfil__peliculas-nombre {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-texto);
+  line-height: 1.8;
+  /* Corta texto largo en 2 líneas máximo */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.perfil__peliculas-rating {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-secundario);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Fecha con checkmark */
+.perfil__peliculas-fecha {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--color-texto-suave);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.perfil__peliculas-fecha i {
+  color: var(--color-secundario);
+  font-size: 0.8rem;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 40px;
+  border-top: 1px solid var(--color-superficie);
+  margin-top: auto;
+}
+
+.footer-izquierda {
+  flex: 2;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-izquierda img {
+  max-width: 100px;
+  height: auto;
+}
+
+#descripcion-footer {
+  color: var(--color-texto-suave);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.footer-centro,
+.footer-derecha {
+  flex: 1;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-titulo {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-texto);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--color-texto-suave);
+  font-size: 0.88rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-texto);
+}
+
+.footer-bottom {
+  width: 100%;
+  border-top: 1px solid var(--color-superficie);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: var(--color-texto-suave);
+}
+
+/* ==========================================
+   MEDIA QUERIES
+   ========================================== */
+
+/* Tablet (≤ 1024px): 3 columnas en la grilla */
+@media (max-width: 1024px) {
+  .perfil__peliculas-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet chica (≤ 768px): sidebar arriba, contenido abajo */
+@media (max-width: 768px) {
+  .perfil {
+    grid-template-columns: 1fr;
+    padding: 24px 20px;
+    gap: 32px;
+  }
+
+  .perfil__info {
+    border-right: none;
+    border-bottom: 1px solid var(--color-superficie);
+    padding-right: 0;
+    padding-bottom: 28px;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .perfil__info-header {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .perfil__menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .perfil__menu a {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    background: var(--color-superficie);
+  }
+
+  .perfil__peliculas {
+    padding-left: 0;
+  }
+
+  .perfil__peliculas-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Móvil (≤ 480px): 2 columnas en la grilla */
+@media (max-width: 480px) {
+  .perfil__peliculas-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .perfil__info {
     flex-direction: column;
-    height: 100%;
-    gap: 16px;
     align-items: center;
-    border-right: 1px solid var(--color-superficie);
-    padding-right: 24px;
-}
+    text-align: center;
+  }
 
-.perfil__info-header{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  .perfil__info-header {
     align-items: center;
-}
+  }
 
-.perfil__info-imagen{
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-}
-
-.perfil__info-detalles{
-    display: flex;
+  .footer {
     flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
+    gap: 24px;
+    padding: 24px 20px;
+  }
 
-.perfil__peliculas{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-
-}
-
-.perfil__peliculas-titulo{
-    color: var(--color-secundario);
-    font-size: 1.5rem;
-    margin-bottom: 16px;
-    margin-top: 0;
-
-}
-
-.perfil__peliculas-lista{
-    display: grid;
-    /* Le saco el punto a los items de la lista */
-    list-style: none;
-    grid-template-columns: repeat(5, 1fr);
-    max-width: 960px;
-    justify-content: space-between;
-    gap: 12px 32px;
-    padding: 0;
-    margin: 0;
-}
-
-.perfil__peliculas-item{
-    display: flex;
+  .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
-    width: 100%;
-
+  }
 }
-
-.perfil__peliculas-imagen{
-    border-radius: 12px;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 2/3;
-    object-fit: cover;
-    display: block;
-    
-    
-
-}
-
-/* Contenedor del texto debajo de la imagen */
-.perfil__peliculas-info {
-    display: flex;
-    flex-direction: column;
-    gap: 6px; /* Separación entre el título y la fecha */
-    width: 100%;
-    margin-top: 4px;
-}
-
-/* Estilo para el título de la película (h4) */
-.perfil__peliculas-nombre {
-    margin: 0; /* Fundamental: quita el margen por defecto del h4 */
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--color-texto);
-}
-
-/* Estilo para la fecha y el icono (p) */
-.perfil__peliculas-fecha {
-    margin: 0; /* Fundamental: quita el margen por defecto del p */
-    font-size: 0.85rem;
-    color: var(--color-texto-suave); /* Un gris claro para que no resalte tanto como el título */
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
