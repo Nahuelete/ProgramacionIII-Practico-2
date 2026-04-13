@@ -1,17 +1,37 @@
+#general-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #pelicula {
     display: flex;
     justify-content: center;
-    border: 3px solid black;
-    margin: 4%;
+    margin: 5%;
     border-radius: 10px;
     padding: 1%;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#texto-pelicula {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 2%;
+    padding-right: 10%;
+    font-size: 20px;
+    width: 55%;
 }
 
 #poster-area {
     margin-right: auto;
     padding: 2%;
     height: auto;
-    width: 600px;
+    width: 45%;
 }
 
 #poster {
@@ -29,4 +49,21 @@
 #horarios {
     display: flex;
     gap: 20px;
+}
+
+#btn-comprar {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(255, 3, 3, 0.617);
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 45%;
+}
+
+#btn-comprar:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #d70404de, #d70404de);
 }
