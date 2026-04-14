@@ -3,24 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boldonse&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Cine Aurora - Detalles</title>
     <meta name="description" content="Cine Aurora - Detalle de la película." />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
-    <link rel="icon" href="./assets/favicon/logo-cine.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/detalle.css" />
   </head>
 
-  <body>
+  <body class="detalle-body">
     <header class="header">
       <div class="nav-logo">
-        <img src="../assets/img/logo-completo.png" alt="Logo Aurora">
+        <img src="../assets/img/logo-completo.png" alt="Logo Aurora" />
       </div>
 
       <nav class="nav">
@@ -37,11 +41,11 @@
       </a>
     </header>
 
-    <main>
+    <main class="detalle-main">
       <section id="general-container">
         <section id="pelicula">
           <div id="poster-area">
-            <img src="../assets/img/poster-1.png" alt="Póster" id="poster"/>
+            <img src="../assets/img/poster-1.png" alt="Póster" id="poster" />
           </div>
 
           <div id="texto-pelicula">
@@ -49,7 +53,9 @@
               <h1>Título</h1>
               <h2 class="color-gray">Lorem ipsum, dolor sit.</h2>
             </div>
-            <hr>
+
+            <hr />
+
             <div>
               <h3 class="color-soft-red">Sinopsis</h3>
               <p class="color-gray">
@@ -59,7 +65,9 @@
                 voluptatibus laboriosam ut recusandae animi quisquam!
               </p>
             </div>
-            <hr>
+
+            <hr />
+
             <div id="datos-pelicula">
               <div>
                 <h3 class="color-soft-red">Duración</h3>
@@ -90,54 +98,65 @@
                 <p class="color-gray">22:00</p>
               </div>
             </div>
-            <hr>
-            <h3 id="rating">
-              <p class="color-gray">Puntuación: </p>
+
+            <hr />
+
+            <div id="rating">
+              <p class="color-gray">Puntuación:</p>
               <span id="stars">★★★★☆</span>
-            </h3>
-            <hr>
-            <a id = "btn-comprar" href="#"onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')">Comprar entradas</a>
+            </div>
+
+            <hr />
+
+            <div id="acciones-detalle">
+              <a
+                id="btn-comprar"
+                href="#"
+                onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')"
+              >
+                Comprar entradas
+              </a>
+              <a id="btn-volver" href="./estrenos.html">Volver a estrenos</a>
+            </div>
           </div>
         </section>
       </section>
     </main>
 
     <footer class="footer">
+      <div class="footer-izquierda">
+        <img src="../assets/img/logo-completo.png" alt="Logo Aurora" />
 
-        <div class="footer-izquierda">
-          <img src="../assets/img/logo-completo.png" alt="Logo Aurora">
+        <p id="descripcion-footer">
+          Tu destino para vivir las mejores experiencias cinematograficas.
+          Descubri, elegi y disfruta del mejor cine.
+        </p>
+      </div>
 
-          <p id="descripcion-footer">Tu destino para vivir las mejores experiencias cinematograficas. Descubri, elegi y disfruta del mejor cine.</p>
-        </div>
-      
-        <div class="footer-centro">
+      <div class="footer-centro">
+        <p>Explorar</p>
 
-          <p>Explorar</p>
+        <ul class="nav-explorar">
+          <a href="../index.html">Cartelera</a>
+          <a href="./estrenos.html">Próximos estrenos</a>
+          <a href="./perfil.html">Mi perfil</a>
+        </ul>
+      </div>
 
-          <ul class="nav-explorar">
-            <a href="../index.html">Cartelera</a>
-            <a href="./estrenos.html">Próximos estrenos</a>
-            <a href="./perfil.html">Mi perfil</a>
-          </ul>
+      <div class="footer-derecha">
+        <p>Cuenta</p>
 
-        </div>
-      
-        <div class="footer-derecha">
+        <ul class="nav-cuenta">
+          <a href="./registro.html">Registrarse</a>
+          <a href="./login.html">Iniciar sesión</a>
+          <a href="./perfil.html">Mi perfil</a>
+        </ul>
+      </div>
 
-          <p>Cuenta</p>
-
-          <ul class="nav-cuenta">
-            <a href="./registro.html">Registrarse</a>
-            <a href="./login.html">Iniciar sesión</a>
-            <a href="./perfil.html">Mi perfil</a>
-          </ul>
-        </div>
-
-        <div class="footer-bottom">
-          <p>© 2026 Aurora. Todos los derechos reservados.</p>
-          <p>🇦🇷 Bahía Blanca, Argentina</p>
-        </div>
-
-      </footer>
+      <div class="footer-bottom">
+        <p>© 2026 Aurora. Todos los derechos reservados.</p>
+        <p>🇦🇷 Bahía Blanca, Argentina</p>
+      </div>
+    </footer>
   </body>
 </html>
