@@ -18,8 +18,6 @@
   </head>
 
   <body class="contenedor">
-
-    <!-- ===== HEADER ===== -->
     <header class="header">
       <div class="nav-logo">
         <img src="../assets/img/logo-completo.png" alt="Logo Aurora">
@@ -33,21 +31,16 @@
         </a>
       </nav>
 
-      <div class="nav-exit">
+      <a href="login.html" class="nav-exit">
         <span class="exit-icon">
-          <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(255, 255, 255);"></i>
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
         </span>
         <span class="exit-text">Cerrar sesión</span>
-      </div>
+      </a>
     </header>
 
-    <!-- ===== MAIN: sidebar + películas ===== -->
     <main class="perfil">
-
-      <!-- Sidebar izquierdo -->
       <section class="perfil__info">
-
-        <!-- Foto con ícono de cámara -->
         <div class="perfil__imagen-wrapper">
           <img
             class="perfil__info-imagen"
@@ -59,7 +52,6 @@
           </div>
         </div>
 
-        <!-- Nombre y membresía -->
         <div class="perfil__info-header">
           <h2 class="perfil__info-nombre">Elena García</h2>
           <p class="perfil__info-miembro">Miembro desde: Enero 2023</p>
@@ -67,22 +59,18 @@
 
         <hr class="perfil__info-divider">
 
-        <!-- Menú de navegación del perfil -->
         <nav class="perfil__menu">
           <a href="#">Mis Entradas</a>
           <a href="#">Métodos de Pago</a>
           <a href="#">Configuración</a>
           <a href="login.html" class="perfil__menu--danger">Cerrar Sesión</a>
         </nav>
-
       </section>
 
-      <!-- Contenido principal: historial de películas -->
       <section class="perfil__peliculas">
         <h3 class="perfil__peliculas-titulo">Películas ya vistas</h3>
 
         <ul class="perfil__peliculas-lista">
-
           <li class="perfil__peliculas-item">
             <img
               src="../assets/img/historial-peliculas/poster-pelicula-0"
@@ -252,53 +240,44 @@
               </p>
             </div>
           </li>
-
         </ul>
       </section>
-
     </main>
 
-    <!-- ===== FOOTER ===== -->
     <footer class="footer">
+      <div class="footer-izquierda">
+        <img src="../assets/img/logo-completo.png" alt="Logo Aurora">
 
-        <div class="footer-izquierda">
-          <img src="/assets/img/logo-completo.png" alt="Logo Aurora">
+        <p id="descripcion-footer">
+          Tu destino para vivir las mejores experiencias cinematograficas.
+          Descubri, elegi y disfruta del mejor cine.
+        </p>
+      </div>
 
-          <p id="descripcion-footer">Tu destino para vivir las mejores experiencias cinematograficas. Descubri, elegi y disfruta del mejor cine.</p>
-        </div>
-      
-        <div class="footer-centro">
+      <div class="footer-centro">
+        <p>Explorar</p>
 
-          <p>Explorar</p>
+        <ul class="nav-explorar">
+          <a href="../index.html">Cartelera</a>
+          <a href="estrenos.html">Próximos estrenos</a>
+          <a href="perfil.html">Mi perfil</a>
+        </ul>
+      </div>
 
-          <ul class="nav-explorar">
-            <a href="../index.html">Cartelera</a>
-            <a href="estrenos.html">Próximos estrenos</a>
-            <a href="perfil.html">Mi perfil</a>
-          </ul>
+      <div class="footer-derecha">
+        <p>Cuenta</p>
 
-        </div>
-      
-        <div class="footer-derecha">
+        <ul class="nav-cuenta">
+          <a href="registro.html">Registrarse</a>
+          <a href="login.html">Iniciar sesión</a>
+          <a href="perfil.html">Mi perfil</a>
+        </ul>
+      </div>
 
-          <p>Cuenta</p>
-
-          <ul class="nav-cuenta">
-            <a href="registro.html">Registrarse</a>
-            <a href="login.html">Iniciar sesión</a>
-            <a href="perfil.html">Mi perfil</a>
-          </ul>
-        </div>
-
-        <div class="footer-bottom">
-          <p>© 2026 Aurora. Todos los derechos reservados.</p>
-          <p><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 512 512"><mask id="SVGuywqVbel"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#SVGuywqVbel)"><path fill="#338af3" d="M0 0h512v144.7L488 256l24 111.3V512H0V367.3L26 256L0 144.7z"/><path fill="#eee" d="M0 144.7h512v222.6H0z"/><path fill="#ffda44" d="m332.4 256l-31.2 14.7l16.7 30.3l-34-6.5l-4.2 34.3l-23.7-25.2l-23.6 25.2l-4.3-34.3l-34 6.5l16.6-30.3l-31.2-14.7l31.3-14.7L194 211l34 6.5l4.3-34.3l23.6 25.2l23.6-25.2l4.4 34.3l34-6.5l-16.7 30.3z"/></g></svg>Bahía Blanca, Argentina</p>
-        </div>
-
+      <div class="footer-bottom">
+        <p>© 2026 Aurora. Todos los derechos reservados.</p>
+        <p>🇦🇷 Bahía Blanca, Argentina</p>
+      </div>
     </footer>
-
   </body>
 </html>
-
-
-

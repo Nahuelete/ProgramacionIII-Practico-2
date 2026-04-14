@@ -152,15 +152,53 @@
   opacity: 0.9;
 }
 
-.site-footer {
-  text-align: center;
-  padding: var(--spacing-24);
-  margin-top: var(--spacing-32);
+/* Override local del footer SOLO para estrenos */
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-bottom: 16px;
+  row-gap: 18px;
+}
+
+.footer-izquierda {
+  align-self: start;
+}
+
+.footer-izquierda img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#descripcion-footer {
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+.footer-centro,
+.footer-derecha {
+  padding-top: 6px;
+}
+
+.footer-bottom {
+  margin-top: 2px;
+  padding-top: 14px;
 }
 
 @media (max-width: 1024px) {
   .estrenos-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-izquierda img {
+    width: 200px;
+  }
+
+  #descripcion-footer {
+    max-width: 100%;
   }
 }
 
@@ -207,5 +245,18 @@
 
   .estreno-card img {
     height: 300px;
+  }
+
+  .footer {
+    padding-top: 32px;
+  }
+
+  .footer-izquierda img {
+    width: 180px;
+    margin: 0 auto 10px;
+  }
+
+  #descripcion-footer {
+    max-width: 100%;
   }
 }
